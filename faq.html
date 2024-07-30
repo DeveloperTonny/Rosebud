@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="image/favi.jpg.png" type="image/x-icon">
+    <title>Rosebud</title>
+
+</head>
+<body>
+    <section class="main_header">
+        <div class="container">
+            <div class="left_side">
+                <img src="image/logo-header.png" alt="">
+            </div>
+            <div class="right_side">
+                <ul class="desktop_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+              
+                <!-- <i class="fa-solid fa-bars" onclick=showmenu();></i> -->
+              
+                <i class="fa-solid fa-bars" onclick=showmenu();></i>
+                <i class="fa-solid fa-xmark" onclick=hidemenu();></i>
+                <div class="mobile_menu">
+                    <i class="fa-solid fa-xmark" onclick=hidemenu();></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                       
+                    </ul>
+                
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <button class="faq-question">What types of flowers do you sell?</button>
+        <div class="faq-answer">
+            <p>We sell a wide variety of flowers including roses, lilies, tulips, orchids, and seasonal flowers.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Do you offer same-day delivery?</button>
+        <div class="faq-answer">
+            <p>Yes, we offer same-day delivery for orders placed before 2 PM.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Can I customize my bouquet?</button>
+        <div class="faq-answer">
+            <p>Absolutely! You can customize your bouquet by selecting the flowers and arrangement style you prefer.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">What is your return policy?</button>
+        <div class="faq-answer">
+            <p>If you are not satisfied with your purchase, you can return it within 7 days for a full refund or exchange.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">Do you provide flower care tips?</button>
+        <div class="faq-answer">
+            <p>Yes, we provide detailed care tips with each purchase to help you keep your flowers fresh for longer.</p>
+        </div>
+    </div>
+</div>
+<!-- js link -->
+<script src="script.js"></script>
+<!-- end -->
+<footer>
+    <div class="footer_section">
+        <div class="container">
+            <div class="footer_col">
+                <img src="image/logo-header.png" alt="">
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitu din, lorem quistix bibendum
+                    auctoris</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer_col">
+                <h4>WORKING HOUR</h4>
+                <p>Monday : 10AM – 9PM <br>
+                    Tuesday : 10AM – 9PM <br>
+                    Wednesday : 10AM – 9PM <br>
+                    Thursday : 10AM – 9PM <br>
+                    Friday : 10AM – 9PM <br>
+                    Saturday : 10AM – 5PM <br>
+                    Sunday : Closed</p>
+            </div>
+            <div class="footer_col">
+                <h4>WHERE TO FIND Us</h4>
+                <p>Adress: Juniper Vally 17, New York
+                    Adress 2: 831 Elm St, New York
+                    Phone 1: +246/ 167 – 1468
+                    Phone 2: +246/ 569-42696
+                    E-mail : rosebud@qodeinteractive.com</p>
+            </div>
+            <div class="footer_col">
+                <h4>FOLLOW OUR INSTAGRAM</h4>
+                <div class="ftr_img">
+                    <img src="image/gallary1.jpg" alt="">
+                    <img src="image/gallary2.jpg" alt="">
+                    <img src="image/gallary3.jpg" alt="">
+                    <img src="image/gallary4.jpg" alt="">
+                    <img src="image/gallary5.jpg" alt="">
+                    <img src="image/gallary6.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="soket">
+        <div class="container">
+            <p>Copyright@2024 Design by <strong>Israt Jahan Tonny </strong><span id="date"></span> <span id="time"></span></p> 
+        </div>
+    </div>
+</footer>
+<script>
+    function updateTime() {
+        const now = new Date();
+        const date = now.toLocaleDateString();
+        const time = now.toLocaleTimeString();
+
+        document.getElementById('date').textContent = date;
+        document.getElementById('time').textContent = time;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime(); // initial call to display the time immediately
+</script>
+</body>
+</html>
